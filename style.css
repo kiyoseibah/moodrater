@@ -1,0 +1,109 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #e0f7fa, #fce4ec);
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  color: #333;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Mood Buttons */
+.mood-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.mood-btn {
+  font-size: 30px;
+  background: #f1f1f1;
+  border: none;
+  padding: 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.mood-btn:hover {
+  transform: scale(1.1);
+  background: #d1f7d1;
+}
+
+/* Note Section */
+.note-section {
+  margin-top: 20px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  resize: none;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+#saveNote {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#saveNote:hover {
+  background: #45a049;
+}
+
+/* Mood Message */
+.mood-message {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #444;
+  font-weight: bold;
+  font-style: italic;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Spotify Player */
+.song-player {
+  margin-top: 15px;
+}
+
+/* Summary Section */
+.summary {
+  margin-top: 20px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #444;
+  display: none;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

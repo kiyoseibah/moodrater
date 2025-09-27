@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mood Tracker with Music</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎧 Rate Your Mood Today</h1>
+    <p class="subtitle">How are you feeling today?</p>
+
+    <!-- Mood Buttons -->
+    <div class="mood-buttons">
+      <button class="mood-btn" data-mood="sad">😭</button>
+      <button class="mood-btn" data-mood="meh">😐</button>
+      <button class="mood-btn" data-mood="okay">🙂</button>
+      <button class="mood-btn" data-mood="happy">😄</button>
+      <button class="mood-btn" data-mood="excited">🤩</button>
+    </div>
+
+    <!-- Note Section -->
+    <div class="note-section">
+      <textarea id="note" placeholder="Write something about today..."></textarea>
+      <button id="saveNote">Save Note</button>
+    </div>
+
+    <!-- Mood Message -->
+    <p id="moodMessage" class="mood-message" style="display: none;"></p>
+
+    <!-- Spotify Player -->
+    <div id="songPlayer" class="song-player"></div>
+
+    <!-- Today's Summary -->
+    <div id="summary" class="summary"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
